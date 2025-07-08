@@ -19,10 +19,26 @@
 # print("length for this name "+ username ,  " = "+lenght) 
 
 #------------------------------------------------------------------------------------------------------
-glass1 = "joox"
-glass2 = "yousef"
-temp = glass2
-glass2 = glass1
-glass1 = temp 
+# glass1 = "joox"
+# glass2 = "yousef"
+# temp = glass2
+# glass2 = glass1
+# glass1 = temp 
 
-print(glass1,glass2)
+# print(glass1,glass2)
+# glass1, glass2 = glass2, glass1  # Python magic! ✨
+
+#-------------------------------------------------------------------------------------------------------
+
+
+print("welcome to the Band name generator")
+city_name  = input("witch city did you grow up in ")
+pet = input("what is the name of a pet? ")
+print("ur band anme could be :"  + city_name +" "+ pet)
+
+
+
+
+
+
+
