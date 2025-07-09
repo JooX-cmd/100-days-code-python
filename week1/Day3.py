@@ -1,3 +1,56 @@
+
+
+#frist_try 
+
+# print("Welcome to Treasure Island.Your mission is to find the treasure")
+# print("""  ____________________________________________________________________
+#  / \-----     ---------  -----------     -------------- ------    ----\
+#  \_/__________________________________________________________________/
+#  |~ ~~ ~~~ ~ ~ ~~~ ~ _____.----------._ ~~~  ~~~~ ~~   ~~  ~~~~~ ~~~~|
+#  |  _   ~~ ~~ __,---'_       "         `. ~~~ _,--.  ~~~~ __,---.  ~~|
+#  | | \___ ~~ /      ( )   "          "   `-.,' (') \~~ ~ (  / _\ \~~ |
+#  |  \    \__/_   __(( _)_      (    "   "     (_\_) \___~ `-.___,'  ~|
+#  |~~ \     (  )_(__)_|( ))  "   ))          "   |    "  \ ~~ ~~~ _ ~~|
+#  |  ~ \__ (( _( (  ))  ) _)    ((     \\//    " |   "    \_____,' | ~|
+#  |~~ ~   \  ( ))(_)(_)_)|  "    ))    //\\ " __,---._  "  "   "  /~~~|
+#  |    ~~~ |(_ _)| | |   |   "  (   "      ,-'~~~ ~~~ `-.   ___  /~ ~ |
+#  | ~~     |  |  |   |   _,--- ,--. _  "  (~~  ~~~~  ~~~ ) /___\ \~~ ~|
+#  |  ~ ~~ /   |      _,----._,'`--'\.`-._  `._~~_~__~_,-'  |H__|  \ ~~|
+#  |~~    / "     _,-' / `\ ,' / _'  \`.---.._          __        " \~ |
+#  | ~~~ / /   .-' , / ' _,'_  -  _ '- _`._ `.`-._    _/- `--.   " " \~|
+#  |  ~ / / _-- `---,~.-' __   --  _,---.  `-._   _,-'- / ` \ \_   " |~|
+#  | ~ | | -- _    /~/  `-_- _  _,' '  \ \_`-._,-'  / --   \  - \_   / |
+#  |~~ | \ -      /~~| "     ,-'_ /-  `_ ._`._`-...._____...._,--'  /~~|
+#  | ~~\  \_ /   /~~/    ___  `---  ---  - - ' ,--.     ___        |~ ~|
+#  |~   \      ,'~~|  " (o o)   "         " " |~~~ \_,-' ~ `.     ,'~~ |
+#  | ~~ ~|__,-'~~~~~\    \"/      "  "   "    /~ ~~   O ~ ~~`-.__/~ ~~~|
+#  |~~~ ~~~  ~~~~~~~~`.______________________/ ~~~    |   ~~~ ~~ ~ ~~~~|
+#  |____~jrei~__~_______~~_~____~~_____~~___~_~~___~\_|_/ ~_____~___~__|
+#  / \----- ----- ------------  ------- ----- -------  --------  -------\
+#  \_/__________________________________________________________________/""")
+
+# choose = str(input("left or right"))
+# if choose.lower() == "right" :
+#     print("Fall into a hole.Game Over")
+# elif choose.lower() == "left":
+#     git = input("swim or wait")
+#     if git.lower() == "swim":
+#         print("fall into hole Game over")
+#     elif git.lower() == "wait":
+#         get_input = input("whitch door 1.Red, 2.Blue, 3.Yello, 4.else")
+#         if get_input.lower() == "red" :
+#             print("Burned by fire.Game Over.")
+#         elif get_input.lower() == "Blue" :
+#             print("Eaten by beasts.Game Over")
+#         elif get_input.lower() == "Yellow":
+#             print("YOu WIn")
+#         else:
+#             print("Game over ")
+#---------------------------------------------------------------------------------------------------
+
+#sec_try
+
+
 print("Welcome to Treasure Island.Your mission is to find the treasure")
 print("""  ____________________________________________________________________
  / \-----     ---------  -----------     -------------- ------    ----\
@@ -25,21 +78,23 @@ print("""  ____________________________________________________________________
  / \----- ----- ------------  ------- ----- -------  --------  -------\
  \_/__________________________________________________________________/""")
 
-choose = str(input("left or right"))
-if choose.lower() == "right" :
-    print("Fall into a hole.Game Over")
-elif choose.lower() == "left":
-    git = input("swim or wait")
-    if git.lower() == "swim":
-        print("fall into hole Game over")
-    elif git.lower() == "wait":
-        get_input = input("whitch door 1.Red, 2.Blue, 3.Yello, 4.else")
-        if get_input.lower() == "red" :
-            print("Burned by fire.Game Over.")
-        elif get_input.lower() == "Blue" :
-            print("Eaten by beasts.Game Over")
-        elif get_input.lower() == "Yellow":
-            print("YOu WIn")
-        else:
-            print("Game over ")
-            
+
+direction = input('"Do u want to go "1.Left"," 2.Right"":  ').lower()  # to get all input as lower case
+
+if direction == "left" :
+   choice2 =  input('you \'ve come to a lake , ther is an isalnd in the middel of the lake . type "swim "to swim cross or "wait" to wait foe a boat :  ').lower()
+   if choice2 == "wait":
+       choice3 = input('you  arrive at the isalnd . ther is house with 3 doors . 1.red, 2.blue , 3.yellow:  ').lower()
+       if choice3 == "red":
+           print("You fell into holle. game over")
+       elif choice3 == "blue":
+           print("You fell into holle. game over")
+       elif choice3 == "yellow":
+           print("You found the treasure , you win")
+   else:
+       print("u got attacked")
+
+else :
+     print("You fell into holle. game over")
+
+
