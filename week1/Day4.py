@@ -64,7 +64,7 @@ scissor = '''
 # t3adol
 
 choice  =[Rock,Paper,scissor]
-choice_name = ['''Rock,Paper,scissor''']
+choice_name = ["Rock","Paper","scissor"]
 print("choice ")
 print("Type 0 for Rock, 1 for Paper, 2 for Scissors")
 user_choice = int(input("Enter ur choice"))
